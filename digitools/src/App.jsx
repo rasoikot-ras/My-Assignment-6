@@ -1,14 +1,12 @@
-import NavBar from "./component/NavBar"
-import './index.css'
+import NavBar from "./component/NavBar";
+import './index.css';
 
 function App() {
-
-
   return (
     <>
-      <Navbar /> 
+      <NavBar cartCount={0} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
