@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Bot",
+    "price": 49,
+    "badge": "Best Seller",
+    "description": "Generate high-quality blog posts and social media captions instantly with AI.",
+    "image": "../assets/writing.png"
+  },
+  {
+    "id": 2,
+    "name": "SEO Rank Tracker",
+    "price": 29,
+    "badge": "New",
+    "description": "Monitor your website's search engine ranking and analyze keywords effectively.",
+    "image": "../assets/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Auto-Post",
+    "price": 19,
+    "badge": "Popular",
+    "description": "Automate your social media presence by scheduling posts in advance.",
+    "image": "https://i.ibb.co/vHq8z4n/social-media.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Email Verifier Pro",
+    "price": 15,
+    "badge": "Trusted",
+    "description": "Clean your email list to improve deliverability and reduce bounce rates.",
+    "image": "https://i.ibb.co/mRP3M5L/email-verify.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Cloud Video Editor",
+    "price": 59,
+    "badge": "Best Seller",
+    "description": "A powerful browser-based video editor for professional content creators.",
+    "image": "https://i.ibb.co/Vgf9Z9N/video-editor.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Logo Studio AI",
+    "price": 25,
+    "badge": "New",
+    "description": "Create stunning logos for your brand using smart AI design templates.",
+    "image": "https://i.ibb.co/YTVh0vB/logo-maker.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Backlink Auditor",
+    "price": 35,
+    "badge": "Top Rated",
+    "description": "Analyze your website's backlink profile and outrank your competitors.",
+    "image": "https://i.ibb.co/gM1P8S1/backlink.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ad Copy Wizard",
+    "price": 22,
+    "badge": "Popular",
+    "description": "Write high-converting ad copies for Facebook and Google Ads effortlessly.",
+    "image": "https://i.ibb.co/PZ8G6G9/ad-copy.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Plagiarism Guard",
+    "price": 12,
+    "badge": "Essential",
+    "description": "Check your content for originality and ensure 100% unique writing.",
+    "image": "https://i.ibb.co/0f4T3Z7/plagiarism.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Grammar Master",
+    "price": 10,
+    "badge": "Free Trial",
+    "description": "The ultimate writing assistant to fix grammar and punctuation errors.",
+    "image": "https://i.ibb.co/fMvC3Z9/grammar.jpg"
+  }
+]
