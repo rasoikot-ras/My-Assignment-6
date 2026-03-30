@@ -31,11 +31,11 @@ const Cart = ({ carts, setCarts }) => {
   };
 
   return (
-    <div className=" p-10 max-w-7xl mx-auto">
+    <div className=" p-10 max-w-7xl mx-auto bg-white border border-[#F2F2F2] rounded-lg">
       <h1 className="text-2xl font-bold mb-5">Your Cart</h1>
 
       {carts.length === 0 ? (
-        <div className="h-96 bg-amber-50 pt-30 items-center">
+        <div className="h-96 pt-30 items-center">
             <p className="text-center text-8xl mb-4"><i class="fa-solid fa-cart-shopping"></i></p>
             <p className="text-center text-2xl font-extrabold">Cart is empty</p>
         </div>
@@ -85,7 +85,7 @@ const Cart = ({ carts, setCarts }) => {
 
           <button
             onClick={handlePayment}
-            className="btn w-full mt-5 bg-[#9514FA] text-white text-2xl  rounded-lg hover:bg-green-400"
+            className="btn w-full mt-5 bg-[#9514FA] text-white text-2xl  rounded-2xl hover:bg-green-400"
           >
             Proceed to Checkout
           </button>

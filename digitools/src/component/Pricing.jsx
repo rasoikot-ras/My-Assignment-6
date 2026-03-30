@@ -6,7 +6,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="pt-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-slate-900 mb-2">Simple, Transparent Pricing</h2>
@@ -42,10 +42,10 @@ const Pricing = () => {
                 <p className="text-indigo-100 mb-10">Join thousands of professionals who are already using DigiTools.</p>
             <div className="flex justify-center gap-4">
                 <button className="px-8 py-3 bg-white text-[#7C3AED] font-bold rounded-full">Explore Projects</button>
-                <button className="px-8 py-3 border border-white/30 text-white font-bold rounded-full hover:bg-white/10">See Pricing</button>
+                <button className="px-8 py-3 border border-white text-white font-bold rounded-full hover:bg-white/10">See Pricing</button>
                 
             </div>
-            <p>14-day free trial • No credit card required • Cancel anytime</p>
+            <p className="mt-4">14-day free trial • No credit card required • Cancel anytime</p>
         </div>
 
     </section>

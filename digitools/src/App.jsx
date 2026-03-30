@@ -5,6 +5,7 @@ import NavBar from "./component/NavBar";
 import Cart from "./component/cart";
 import Steps from "./component/Steps";
 import Pricing from "./component/Pricing";
+import Footer from "./Footer";
 import { ToastContainer } from 'react-toastify';
 
 
@@ -25,42 +26,57 @@ function App() {
   return (
     <>
       <NavBar cartCount={carts.length} />
-      <Banner />
-       <div className="text-center mb-12 pt-20">
-        <h2 className="text-5xl font-extrabold text-[#101727]">Premium Digital Tools</h2>
-        <p className="text-gray-500 mt-4 text-lg font-medium">Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
-      </div>
-      {/* button */}
-      <div className="flex justify-center mb-16">
-        <div className="bg-white border border-gray-100 p-1 rounded-full shadow-sm inline-flex">
-          <button
-            onClick={() => setActiveView("model")}
-             aria-label={`Cart (${carts.length})`}
-            className={`px-10 py-3 rounded-full font-bold transition-all ${ activeView === "model"
-              ? "bg-[#7C3AED] text-white shadow-md" 
-              : "text-gray-400 hover:text-slate-800"
-            }`}
-          >
-            Products
-          </button>
-          <button
-            onClick={() => setActiveView("cart")}
-            className={`px-10 py-3 rounded-full font-bold transition-all flex items-center gap-2 ${ activeView === "cart"
-              ? "bg-[#7C3AED] text-white shadow-md" 
-              : "text-gray-400 hover:text-slate-800"
-            }`}
-          >
-            Cart ({carts.length})
-          </button>
-        </div>
-      </div>
-       {activeView === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/>}
-       {activeView === "cart" && <Cart  carts={carts} setCarts={setCarts}/>}
 
-       <Steps />
-       <Pricing />
-       
-       <ToastContainer/>
+    
+      {activeView === "model" && (
+        <>
+          <Banner />
+        
+          <div className="text-center pt-20 mb-10">
+            <h2 className="text-5xl font-black text-slate-900">Premium Digital Tools</h2>
+            <p className="text-[#627382] mt-4 text-base font-medium">Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
+          </div>
+
+        
+          <div className="flex justify-center mb-16">
+            <div className="bg-white border border-[#F6F6F6] p-1 rounded-full shadow-sm inline-flex">
+              <button onClick={() => setActiveView("model")} className={`px-10 py-3 rounded-full font-bold ${activeView === "model" ? "bg-[#7C3AED] text-white" : "text-gray-400"}`}>Products</button>
+              <button onClick={() => setActiveView("cart")} className={`px-10 py-3 rounded-full font-bold ${activeView === "cart" ? "bg-[#7C3AED] text-white" : "text-gray-400"}`}>Cart ({carts.length})</button>
+            </div>
+          </div>
+
+        
+          <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/>
+
+        
+          <Steps />
+          <Pricing />
+          <Footer />
+        </>
+      )}
+
+    
+      {activeView === "cart" && (
+        
+        <div className="min-h-screen pt-20 bg-slate-50">
+          <div className="text-center mb-12 pt-20">
+            <h2 className="text-5xl font-extrabold text-[#101727]">Premium Digital Tools</h2>
+            <p className="text-[#627382] mt-4 text-base font-medium">Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>
+          </div>
+        
+          <div className="flex justify-center mb-10">
+            <div className="bg-white border border-[#F6F6F6] p-1 rounded-full shadow-sm inline-flex">
+              <button onClick={() => setActiveView("model")} className="px-10 py-3 rounded-full font-bold text-gray-400">Products</button>
+              <button className="px-10 py-3 rounded-full font-bold bg-[#7C3AED] text-white">Cart ({carts.length})</button>
+            </div>
+          </div>
+
+        
+          <Cart carts={carts} setCarts={setCarts} />
+        </div>
+      )}
+
+      <ToastContainer />
     </>
   );
 }
