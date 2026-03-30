@@ -1,7 +1,7 @@
 import { use } from "react";
 import ModelCard from "./ModelCard";
 
-const Models = ({ modelPromise}) => {
+const Models = ({ modelPromise, carts, setCarts}) => {
   const models = use(modelPromise);
     
   return (

@@ -9,6 +9,7 @@ const ModelCard = ({ model, carts, setCarts }) => {
   const handleAddToCart = () => {
 
     setIsCart(true);
+    setCarts([...carts, model])
 
     const isFound = carts.find((item) => item.id === model.id);
 
