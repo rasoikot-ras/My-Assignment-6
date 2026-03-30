@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Writer",
+    "price": 29,
+    "type": "Mo",
+    "badge": "Best Seller",
+    "description": "Generate high-quality blogs and marketing copy in seconds using GPT-4 technology.",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Multi-language support"],
+    "image": "https://cdn-icons-png.flaticon.com/512/2593/2593635.png"
+  },
+  {
+    "id": 2,
+    "name": "SEO Optimizer Pro",
+    "price": 45,
+    "type": "Mo",
+    "badge": "Popular",
+    "description": "Boost your website ranking with automated keyword research and on-page analysis.",
+    "features": ["Daily rank tracking", "Competitor analysis", "Backlink checker"],
+    "image": "https://cdn-icons-png.flaticon.com/512/1055/1055644.png"
+  },
+  {
+    "id": 3,
+    "name": "Design Asset Pack",
+    "price": 59,
+    "type": "One-Time",
+    "badge": "Hot",
+    "description": "2000+ premium UI components, icons, and 3D illustrations for your next project.",
+    "features": ["Figma & Adobe XD files", "Lifetime updates", "Commercial license"],
+    "image": "https://cdn-icons-png.flaticon.com/512/1260/1260212.png"
+  },
+  {
+    "id": 4,
+    "name": "Social Auto-Post",
+    "price": 19,
+    "type": "Mo",
+    "badge": "New",
+    "description": "Schedule and automate your social media posts across all platforms easily.",
+    "features": ["Bulk scheduling", "Analytics dashboard", "AI image suggestions"],
+    "image": "https://cdn-icons-png.flaticon.com/512/1968/1968641.png"
+  },
+  {
+    "id": 5,
+    "name": "Cloud Video Editor",
+    "price": 39,
+    "type": "Mo",
+    "badge": "Trending",
+    "description": "Powerful browser-based video editor with 4K export and premium transitions.",
+    "features": ["Cloud storage", "Stock video library", "Real-time collaboration"],
+    "image": "https://cdn-icons-png.flaticon.com/512/3048/3048453.png"
+  },
+  {
+    "id": 6,
+    "name": "Email Verifier Pro",
+    "price": 12,
+    "type": "Mo",
+    "badge": "Best Seller",
+    "description": "Clean your email list and reduce bounce rates with 99% accuracy.",
+    "features": ["Bulk verification", "API integration", "Spam trap detection"],
+    "image": "https://cdn-icons-png.flaticon.com/512/2099/2099199.png"
+  },
+  {
+    "id": 7,
+    "name": "Logo Studio AI",
+    "price": 25,
+    "type": "One-Time",
+    "badge": "New",
+    "description": "Create stunning, unique logos for your brand using smart AI design templates.",
+    "features": ["Vector exports", "Brand kit builder", "Social media kit"],
+    "image": "https://cdn-icons-png.flaticon.com/512/1162/1162250.png"
+  },
+  {
+    "id": 8,
+    "name": "E-com Analytics",
+    "price": 69,
+    "type": "Mo",
+    "badge": "Pro",
+    "description": "Deep insights into your store performance and customer buying behavior.",
+    "features": ["Revenue forecasting", "Customer LTV tracking", "Smart alerts"],
+    "image": "https://cdn-icons-png.flaticon.com/512/1149/1149022.png"
+  },
+  {
+    "id": 9,
+    "name": "Code Snippet Manager",
+    "price": 15,
+    "type": "One-Time",
+    "badge": "Popular",
+    "description": "Organize and share your reusable code snippets with your development team.",
+    "features": ["Syntax highlighting", "Cloud sync", "VS Code extension"],
+    "image": "https://cdn-icons-png.flaticon.com/512/1150/1150624.png"
+  },
+  {
+    "id": 10,
+    "name": "Chatbot Builder",
+    "price": 35,
+    "type": "Mo",
+    "badge": "Hot",
+    "description": "Build intelligent customer support bots without writing a single line of code.",
+    "features": ["No-code builder", "WhatsApp integration", "Human hand-off"],
+    "image": "https://cdn-icons-png.flaticon.com/512/2040/2040946.png"
+  }
+]
