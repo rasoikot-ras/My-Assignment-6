@@ -31,7 +31,7 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* Right Image */}
+        
         <div className="w-full md:w-auto">
           <img src={mybanner} alt="" />
         </div>
