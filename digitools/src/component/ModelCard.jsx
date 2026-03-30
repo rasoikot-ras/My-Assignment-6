@@ -1,19 +1,11 @@
-import { useState } from "react";
 import { toast } from "react-toastify";
 
 const ModelCard = ({ model, carts, setCarts }) => { 
   
- const [isFound, setIsCart] = useState(false)
-  
+  const isAlreadyInCart = carts.find((item) => item.id === model.id);
 
   const handleAddToCart = () => {
-
-    setIsCart(true);
-    setCarts([...carts, model])
-
-    const isFound = carts.find((item) => item.id === model.id);
-
-    if (isFound) {
+    if (isAlreadyInCart) {
       toast.error("Item already in cart!");
       return;
     }
@@ -23,7 +15,16 @@ const ModelCard = ({ model, carts, setCarts }) => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+    <div className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative group">
+      
+      {model.badge && (
+        <div className="absolute top-5 right-5 z-10">
+          <span className="bg-[#7C3AED] text-white text-[10px] font-black px-3 py-1 rounded-lg shadow-md uppercase tracking-widest">
+            {model.badge}
+          </span>
+        </div>
+      )}
+
       <div>
         <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6">
           <img src={model.image} alt="icon" className="w-8 h-8 object-contain" />
@@ -36,16 +37,24 @@ const ModelCard = ({ model, carts, setCarts }) => {
           <span className="text-gray-400 text-sm font-medium">/{model.type || 'mo'}</span>
         </div>
       </div>
+      
+      <ul className="space-y-3 mb-8">
+          {model.features.map((feature, index) => (
+            <li key={index} className="flex items-center gap-2 text-sm text-gray-600">
+              <span className="text-green-500 font-bold">✓</span> {feature}
+            </li>
+          ))}
+      </ul>
 
       <button 
         onClick={handleAddToCart}
         className={`w-full py-4 font-bold rounded-2xl transition-all shadow-lg ${
-          isFound 
+          isAlreadyInCart 
           ? "bg-green-100 text-green-600 cursor-not-allowed" 
-          : "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-indigo-100"
+          : "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-indigo-100 active:scale-95"
         }`}
       >
-        {isFound ? "Added to Cart" : "Buy Now"}
+        {isAlreadyInCart ? "Added to Cart" : "Buy Now"}
       </button>
     </div>
   );

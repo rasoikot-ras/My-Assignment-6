@@ -32,18 +32,19 @@ const Cart = ({ carts, setCarts }) => {
 
   return (
     <div className=" p-10 max-w-7xl mx-auto">
-      <h1 className="text-2xl font-bold">Your Cart</h1>
+      <h1 className="text-2xl font-bold mb-5">Your Cart</h1>
 
       {carts.length === 0 ? (
-        <div className="h-96 bg-amber-50 flex justify-center items-center">
-            <p className="text-center text-2xl p-5">Cart is empty</p>
+        <div className="h-96 bg-amber-50 pt-30 items-center">
+            <p className="text-center text-8xl mb-4"><i class="fa-solid fa-cart-shopping"></i></p>
+            <p className="text-center text-2xl font-extrabold">Cart is empty</p>
         </div>
       ) : (
         <>
           <div className="space-y-5 mt-4">
             {carts.map((item) => (
               <div
-                className="flex items-center justify-between border rounded-lg p-3"
+                className="flex items-center justify-between bg-[#E3F6FF] border-none rounded-lg p-3"
                 key={item.id}
               >
                 <div className="flex  items-center gap-2">
@@ -77,14 +78,14 @@ const Cart = ({ carts, setCarts }) => {
             ))}
           </div>
 
-          <div className=" flex justify-between bg-black text-white p-5 mt-5 rounded-lg text-3xl font-bold">
-            <div>Total</div>
+          <div className=" flex justify-between bg-[#627382] text-black p-5 mt-5 rounded-lg text-3xl font-bold">
+            <div>Total:</div>
             <div>$ {totalPrice}</div>
           </div>
 
           <button
             onClick={handlePayment}
-            className="btn w-full mt-5 bg-[#9514FA] text-white text-2xl  rounded-lg"
+            className="btn w-full mt-5 bg-[#9514FA] text-white text-2xl  rounded-lg hover:bg-green-400"
           >
             Proceed to Checkout
           </button>

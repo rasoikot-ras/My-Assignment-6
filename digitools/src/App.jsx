@@ -3,6 +3,8 @@ import Banner from "./component/Banner";
 import Models from "./component/models";
 import NavBar from "./component/NavBar";
 import Cart from "./component/cart";
+import Steps from "./component/Steps";
+import Pricing from "./component/Pricing";
 import { ToastContainer } from 'react-toastify';
 
 
@@ -54,6 +56,10 @@ function App() {
       </div>
        {activeView === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/>}
        {activeView === "cart" && <Cart  carts={carts} setCarts={setCarts}/>}
+
+       <Steps />
+       <Pricing />
+       
        <ToastContainer/>
     </>
   );
