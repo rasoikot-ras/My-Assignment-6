@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
 
         
-        <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs">
+        <div className="pt-8 border-t border-[#FAFAFA] flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-xs">
           <p>© 2026 Digitools. All rights reserved.</p>
           <div className="flex gap-8">
             <span className="hover:text-white cursor-pointer">Privacy Policy</span>
