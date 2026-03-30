@@ -47,14 +47,14 @@ const Banner = () => {
           </div>
 
           {/* Vertical Divider for desktop */}
-          <div className="hidden md:block h-16 w-[1px] bg-indigo-300 opacity-50"></div>
+          <div className="hidden md:block h-16 w-px bg-indigo-300 opacity-50"></div>
 
           <div className="text-center">
             <h2 className="text-5xl font-bold mb-2">200+</h2>
             <p className="text-indigo-100 text-lg">Premium Tools</p>
           </div>
 
-          <div className="hidden md:block h-16 w-[1px] bg-indigo-300 opacity-50"></div>
+          <div className="hidden md:block h-16 w-px bg-indigo-300 opacity-50"></div>
 
           <div className="text-center">
             <h2 className="text-5xl font-bold mb-2">4.9</h2>
@@ -63,6 +63,7 @@ const Banner = () => {
 
         </div>
       </section>
+      
     </>
   );
 };
