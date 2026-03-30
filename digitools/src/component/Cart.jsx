@@ -35,7 +35,9 @@ const Cart = ({ carts, setCarts }) => {
       <h1 className="text-2xl font-bold">Your Cart</h1>
 
       {carts.length === 0 ? (
-        <p className="text-center text-2xl p-5">Cart is empty</p>
+        <div className="h-96 bg-amber-50 flex justify-center items-center">
+            <p className="text-center text-2xl p-5">Cart is empty</p>
+        </div>
       ) : (
         <>
           <div className="space-y-5 mt-4">
@@ -47,24 +49,28 @@ const Cart = ({ carts, setCarts }) => {
                 <div className="flex  items-center gap-2">
                   <div>
                     <img
-                      className="h-20 w-20 object-contain"
+                      className="h-20 w-10 object-contain"
                       src={item.image}
                     />
                   </div>
 
                   <div>
-                    <h2 className="text-xl font-bold">{item.title}</h2>
+                    {/* <h2 className="text-xl font-bold">{item.title}</h2> */}
+                    <div className="text-left">
+                    <h4 className="text-xl font-semibold">{item.name}</h4>
+                    <p className="text-base text-[#627382]">${item.price}</p>
+                  </div>
                   </div>
                 </div>
 
-                <div className="flex gap-10">
-                  <div className="text-3xl font-bold">${item.price}/month</div>
 
+                <div className="flex">
+                  
                   <button
                     onClick={() => handleDelete(item)}
                     className=" btn rounded-full btn-error"
                   >
-                    X
+                    Remove
                   </button>
                 </div>
               </div>
@@ -78,7 +84,7 @@ const Cart = ({ carts, setCarts }) => {
 
           <button
             onClick={handlePayment}
-            className="btn w-full mt-5 bg-linear-to-[#4F39F6] from-[#9514FA] text-white text-2xl  rounded-lg"
+            className="btn w-full mt-5 bg-[#9514FA] text-white text-2xl  rounded-lg"
           >
             Proceed to Checkout
           </button>
