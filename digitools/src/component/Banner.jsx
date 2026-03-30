@@ -37,7 +37,7 @@ const Banner = () => {
         </div>
       </section>
 
-      {/* Stats Section (Purple Bar) */}
+      
       <section className="bg-[#7C3AED] py-16">
         <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-around items-center gap-12 text-white">
           
@@ -46,7 +46,7 @@ const Banner = () => {
             <p className="text-indigo-100 text-lg">Active Users</p>
           </div>
 
-          {/* Vertical Divider for desktop */}
+          
           <div className="hidden md:block h-16 w-px bg-indigo-300 opacity-50"></div>
 
           <div className="text-center">
