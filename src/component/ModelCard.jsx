@@ -36,15 +36,15 @@ const ModelCard = ({ model, carts, setCarts }) => {
       )}
 
       <div>
-        <div className="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6">
+        <div className="w-14 h-14 bg-indigo-50 rounded-full flex items-center justify-center mb-6">
           <img src={model.image} alt="icon" className="w-8 h-8 object-contain" />
         </div>
-        <h3 className="text-2xl font-bold text-slate-800 mb-3">{model.name}</h3>
-        <p className="text-gray-500 text-sm mb-6 leading-relaxed line-clamp-2">{model.description}</p>
+        <h3 className="text-2xl font-bold text-[#101727] mb-3">{model.name}</h3>
+        <p className="text-[#627382] text-sm mb-6 leading-relaxed line-clamp-2">{model.description}</p>
         
         <div className="mb-6">
-          <span className="text-3xl font-black text-slate-900">${model.price}</span>
-          <span className="text-gray-400 text-sm font-medium">/{model.type || 'mo'}</span>
+          <span className="text-3xl font-black text-[#101727]">${model.price}</span>
+          <span className="text-[#627382] text-sm font-medium">/{model.type || 'mo'}</span>
         </div>
       </div>
       
@@ -58,7 +58,7 @@ const ModelCard = ({ model, carts, setCarts }) => {
 
       <button 
         onClick={handleAddToCart}
-        className={`w-full py-4 font-bold rounded-2xl transition-all shadow-lg ${
+        className={`w-full py-4 font-bold rounded-4xl transition-all shadow-lg ${
           isAlreadyInCart 
           ? "bg-green-100 text-green-600 cursor-not-allowed" 
           : "bg-[#7C3AED] hover:bg-[#6D28D9] text-white shadow-indigo-100 active:scale-95"

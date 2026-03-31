@@ -19,7 +19,7 @@ const NavBar = ({ cartCount }) => {
 
       <div className="flex items-center gap-4">
         
-        <div className="relative p-4 bg-gray-100 rounded-full cursor-pointer">
+        <div className="relative p-4  cursor-pointer">
           <span><img src={mynav} alt="" /></span>
           {cartCount > 0 && (
             <span className="absolute -top-1 -right-1 bg-gradient-to-r from-orange-500 to-red-500 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full font-bold border-2 border-white">

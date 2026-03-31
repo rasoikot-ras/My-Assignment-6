@@ -78,7 +78,7 @@ const Cart = ({ carts, setCarts }) => {
             ))}
           </div>
 
-          <div className=" flex justify-between bg-[#627382] text-black p-5 mt-5 rounded-lg text-3xl font-bold">
+          <div className=" flex justify-between text-[#627382]  p-5 mt-5 rounded-lg text-3xl font-bold">
             <div>Total:</div>
             <div>$ {totalPrice}</div>
           </div>

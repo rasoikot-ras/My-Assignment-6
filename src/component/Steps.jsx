@@ -13,7 +13,7 @@ const Steps = () => {
     { 
       id: "02", 
       title: "Choose Products", 
-      desc: "Browse our catalog and select the best tools you need.", 
+      desc: "Browse our catalog and select the tools that fit your needs.", 
       image: myStepsB 
     },
     { 
@@ -47,7 +47,7 @@ return (
 
               
               <div className='flex justify-center items-center'>
-                <div className="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform p-3">
+                <div className="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform p-3">
                 <img src={step.image} alt={step.title} className="w-full h-full object-contain" />
                 </div>
               </div>

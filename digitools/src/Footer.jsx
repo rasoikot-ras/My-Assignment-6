@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-10 lg:px-20">
         
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 mb-16">
           
           
           <div className="lg:col-span-2">
@@ -33,6 +33,16 @@ const Footer = () => {
               <li className="hover:text-[#7C3AED] cursor-pointer transition-colors">Blog</li>
               <li className="hover:text-[#7C3AED] cursor-pointer transition-colors">Careers</li>
               <li className="hover:text-[#7C3AED] cursor-pointer transition-colors">Press</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold mb-6 text-slate-200">Resources</h4>
+              <ul className="space-y-4 text-gray-500 text-sm font-medium">
+              <li className="hover:text-[#7C3AED] cursor-pointer transition-colors">Documentation</li>
+              <li className="hover:text-[#7C3AED] cursor-pointer transition-colors">Help Center</li>
+              <li className="hover:text-[#7C3AED] cursor-pointer transition-colors">Community</li>
+              <li className="hover:text-[#7C3AED] cursor-pointer transition-colors">Contact</li>
             </ul>
           </div>
 
