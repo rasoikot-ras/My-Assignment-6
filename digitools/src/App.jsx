@@ -6,7 +6,7 @@ import Cart from "./component/cart";
 import Steps from "./component/Steps";
 import Pricing from "./component/Pricing";
 import Footer from "./Footer";
-import { ToastContainer } from 'react-toastify';
+
 
 
 import { useState } from "react";
@@ -76,7 +76,7 @@ function App() {
         </div>
       )}
 
-      <ToastContainer />
+      
     </>
   );
 }
