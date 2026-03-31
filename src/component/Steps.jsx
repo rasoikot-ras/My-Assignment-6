@@ -32,7 +32,7 @@ return (
        
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-slate-900 mb-2">Get Started In 3 Steps</h2>
-          <p className="text-gray-500">Everything you need to build in minutes, not hours.</p>
+          <p className="text-gray-500">Start using premium digital tools in minutes, not hours.</p>
         </div>
 
         

@@ -14,12 +14,22 @@ const ModelCard = ({ model, carts, setCarts }) => {
     toast.success(`${model.name || "Tool"} added successfully!`);
   };
 
+  const badgeColorMap = {
+    "Best Seller": "bg-amber-500 shadow-amber-100",
+    "Popular": "bg-blue-500 shadow-blue-100",
+    "Hot": "bg-red-500 shadow-red-100",
+    "New": "bg-green-500 shadow-green-100",
+    "Trending": "bg-pink-500 shadow-pink-100",
+    "Pro": "bg-indigo-600 shadow-indigo-100"
+  };
+
   return (
     <div className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between relative group">
       
       {model.badge && (
         <div className="absolute top-5 right-5 z-10">
-          <span className="bg-[#7C3AED] text-white text-[10px] font-black px-3 py-1 rounded-lg shadow-md uppercase tracking-widest">
+         
+          <span className={`${badgeColorMap[model.badge] || "bg-gray-500"} text-white text-[10px] font-black px-3 py-1 rounded-lg shadow-md uppercase tracking-widest`}>
             {model.badge}
           </span>
         </div>
@@ -61,3 +71,4 @@ const ModelCard = ({ model, carts, setCarts }) => {
 };
 
 export default ModelCard;
+
