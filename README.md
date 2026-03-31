@@ -1,6 +1,7 @@
 # DigiTools
-  DigiTools is a modern, high-performance web application designed for creators and businesses to explore and purchase premium digital assets. Inspired by high-end SaaS designs, it features a seamless user experience, a dynamic cart     system, and a fully responsive interface.
-
+  DigiTools is a modern, high-performance web application designed for creators and businesses to explore and purchase premium digital assets. Inspired by Programming Hero designs, it features a seamless user experience, a dynamic cart     system, and a fully responsive interface.
+#
+#
 ## Technology Used
 ## . React.js
 ## . Tailwind CSS
