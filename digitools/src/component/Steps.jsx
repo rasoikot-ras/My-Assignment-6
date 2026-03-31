@@ -53,8 +53,8 @@ return (
               </div>
 
               
-              <h3 className="text-xl font-bold text-slate-800 mb-3">{step.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+              <h3 className="text-xl text-center font-bold text-slate-800 mb-3">{step.title}</h3>
+              <p className="text-gray-500 text-center text-sm leading-relaxed">{step.desc}</p>
             </div>
           ))}
         </div>
